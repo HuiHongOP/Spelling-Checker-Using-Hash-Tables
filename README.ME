@@ -1,0 +1,24 @@
+//Huihong Zheng
+
+
+The Rvalue is 31 being used on double hash table
+for spell check.cc, it will be using quadratic_probing hash table 
+
+
+To Run the create_and_test_hash.cc
+
+g++ -std=c++14 -o create_and_test_hash create_and_test_hash.cc
+
+./create_and_test_hash <words filename> <query words filename> <Hashing Type>
+
+ex: ./create_and_test_hash wordsEnglish.txt query_words.txt double
+
+
+
+To Run the spell_check.cc
+Noticed that it is using quadratic_probing in the spell_check.cc as hashing method/table
+
+g++ -std=c++14 -o spell_check spell_check.cc
+./spell_check <document filename> <dictionary filename>
+
+ex: ./spell_check document1.txt wordsEnglish.txt
